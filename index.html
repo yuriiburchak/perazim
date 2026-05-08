@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perazim Systems | AI Automation & Web Development Agency</title>
+  <meta name="description" content="Perazim Systems is a premium AI automation and web development agency. We build high-performance websites, AI agents, and custom software that scale businesses across US & EU.">
+  <meta name="keywords" content="AI Automation Agency, Web Development, UI/UX Design, Digital Product Design, Telegram Bot Development, Business Automation">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Manrope:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+  <script src="translations.js"></script>
+</head>
+
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header id="header">
+    <div class="nav">
+      <a href="#" class="logo"><span class="logo-text">perazim</span><span class="logo-systems">.systems</span></a>
+      <ul class="nav-menu">
+        <li><a href="#services" data-i18n="nav-services">Services</a></li>
+        <li><a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a></li>
+        <li><a href="#packages" data-i18n="nav-packages">Packages</a></li>
+        <li><a href="#faq" data-i18n="nav-faq">FAQ</a></li>
+        <li class="mobile-lang-switch">
+          <div class="lang-switch">
+            <button onclick="setLanguage('ua')" id="lang-ua-mob">UA</button>
+            <span class="sep">|</span>
+            <button onclick="setLanguage('en')" id="lang-en-mob" class="active">EN</button>
+          </div>
+        </li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch">
+          <button onclick="setLanguage('ua')" id="lang-ua">UA</button>
+          <span class="sep">|</span>
+          <button onclick="setLanguage('en')" id="lang-en" class="active">EN</button>
+        </div>
+        <a href="#contact" class="btn btn-primary" id="nav-ghost" data-i18n="nav-cta">Scale My Business</a>
+      </div>
+      <button class="hamburger" onclick="toggleNav()" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-dots"></div>
+    <div class="wrap">
+      <div class="hero-inner">
+
+        <!-- LEFT -->
+        <div class="hero-left">
+          <div class="hero-eyebrow">
+            <span class="live"></span>
+            <span data-i18n="hero-eyebrow">Accepting new projects · US & EU</span>
+          </div>
+          <h1 class="hero-title" data-i18n="hero-title">
+            We Build Digital Products<br>
+            That <em>Scale</em> Your Business
+          </h1>
+          <p class="hero-sub" data-i18n="hero-sub">
+            From high-converting websites and custom software to AI automation and CRM systems — we deliver full-stack
+            digital solutions that drive revenue, save time, and eliminate bottlenecks for small and mid-sized
+            businesses.
+          </p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary btn-lg"><span data-i18n="hero-cta-check">Check Availability</span> <span class="arrow">→</span></a>
+            <a href="#portfolio" class="btn btn-ghost btn-lg" data-i18n="hero-cta-portfolio">See Results in Action</a>
+          </div>
+          <div class="hero-microcopy">
+            <span><svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> <span data-i18n="hero-micro-1">Response in under 24 hours</span></span>
+            <span><svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> <span data-i18n="hero-micro-2">No strings attached</span></span>
+            <span><svg viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd" />
+              </svg> <span data-i18n="hero-micro-3">Starts with a 15-min chat</span></span>
+          </div>
+          <div class="hero-trust">
+            <div class="trust-avatars">
+              <div class="av">👤</div>
+              <div class="av">👤</div>
+              <div class="av">👤</div>
+              <div class="av">👤</div>
+            </div>
+            <div class="trust-text" data-i18n="hero-trust">
+              Trusted by <strong>40+ businesses</strong> across US, UK &amp; Europe
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT — SVG Dashboard Illustration -->
+        <div class="hero-visual">
+          <div style="position:relative">
+
+            <svg viewBox="0 0 520 460" fill="none" xmlns="http://www.w3.org/2000/svg"
+              style="width:100%;max-width:520px;filter:drop-shadow(0 24px 56px rgba(37,99,235,.13))" role="img" aria-label="Digital Product Dashboard Illustration">
+              <title>Perazim Systems Dashboard</title>
+              <!-- Main card bg -->
+              <rect x="0" y="16" width="520" height="428" rx="20" fill="white" stroke="#E5E7EB" stroke-width="1.5" />
+              <!-- Top bar -->
+              <rect x="0" y="16" width="520" height="50" rx="20" fill="#F7F8FA" />
+              <rect x="0" y="46" width="520" height="20" fill="#F7F8FA" />
+              <rect x="0" y="56" width="520" height="10" fill="white" />
+              <circle cx="30" cy="41" r="5.5" fill="#FF6058" />
+              <circle cx="48" cy="41" r="5.5" fill="#FFBD2E" />
+              <circle cx="66" cy="41" r="5.5" fill="#29C940" />
+              <rect x="190" y="33" width="140" height="14" rx="7" fill="#E5E7EB" />
+
+              <!-- LEFT COLUMN — metric cards -->
+              <!-- M1 -->
+              <rect x="20" y="80" width="148" height="106" rx="14" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="1" />
+              <text x="38" y="112" font-family="Manrope,sans-serif" font-size="10" font-weight="700" fill="#6B7280"
+                letter-spacing="0.08em">PROJECTS</text>
+              <text x="38" y="148" font-family="Manrope,sans-serif" font-size="36" font-weight="800"
+                fill="#1D4ED8">40+</text>
+              <text x="38" y="167" font-family="Manrope,sans-serif" font-size="10" fill="#6366F1">↑ 12 this
+                quarter</text>
+              <!-- M2 -->
+              <rect x="20" y="200" width="148" height="106" rx="14" fill="#F0FDF4" stroke="#BBF7D0" stroke-width="1" />
+              <text x="38" y="232" font-family="Manrope,sans-serif" font-size="10" font-weight="700" fill="#6B7280"
+                letter-spacing="0.08em">ON-TIME</text>
+              <text x="38" y="268" font-family="Manrope,sans-serif" font-size="36" font-weight="800"
+                fill="#059669">98%</text>
+              <text x="38" y="287" font-family="Manrope,sans-serif" font-size="10" fill="#059669">Delivery rate</text>
+              <!-- M3 -->
+              <rect x="20" y="320" width="148" height="106" rx="14" fill="#FFF7ED" stroke="#FED7AA" stroke-width="1" />
+              <text x="38" y="352" font-family="Manrope,sans-serif" font-size="10" font-weight="700" fill="#6B7280"
+                letter-spacing="0.08em">AVG. LAUNCH</text>
+              <text x="38" y="388" font-family="Manrope,sans-serif" font-size="36" font-weight="800"
+                fill="#D97706">2wk</text>
+              <text x="38" y="407" font-family="Manrope,sans-serif" font-size="10" fill="#D97706">Kickoff to live</text>
+
+              <!-- RIGHT COLUMN — project rows -->
+              <rect x="184" y="80" width="316" height="58" rx="12" fill="#F9FAFB" />
+              <rect x="200" y="95" width="34" height="34" rx="8" fill="#EEF2FF" />
+              <text x="208" y="117" font-family="sans-serif" font-size="16">🛒</text>
+              <text x="244" y="111" font-family="Manrope,sans-serif" font-size="13" font-weight="700"
+                fill="#111827">E-Commerce Platform</text>
+              <text x="244" y="127" font-family="Manrope,sans-serif" font-size="11" fill="#6B7280">Web Dev +
+                Payments</text>
+              <rect x="416" y="101" width="62" height="20" rx="10" fill="#D1FAE5" />
+              <text x="427" y="115" font-family="Manrope,sans-serif" font-size="10" font-weight="800" fill="#059669">●
+                Live</text>
+
+              <rect x="184" y="150" width="316" height="58" rx="12" fill="#F9FAFB" />
+              <rect x="200" y="165" width="34" height="34" rx="8" fill="#EDE9FE" />
+              <text x="208" y="187" font-family="sans-serif" font-size="16">🤖</text>
+              <text x="244" y="181" font-family="Manrope,sans-serif" font-size="13" font-weight="700" fill="#111827">CRM
+                + AI Chatbot</text>
+              <text x="244" y="197" font-family="Manrope,sans-serif" font-size="11" fill="#6B7280">Automation ·
+                SaaS</text>
+              <rect x="403" y="171" width="78" height="20" rx="10" fill="#DBEAFE" />
+              <text x="413" y="185" font-family="Manrope,sans-serif" font-size="10" font-weight="800" fill="#2563EB">In
+                Progress</text>
+
+              <rect x="184" y="220" width="316" height="58" rx="12" fill="#F9FAFB" />
+              <rect x="200" y="235" width="34" height="34" rx="8" fill="#D1FAE5" />
+              <text x="208" y="257" font-family="sans-serif" font-size="16">📱</text>
+              <text x="244" y="251" font-family="Manrope,sans-serif" font-size="13" font-weight="700"
+                fill="#111827">Telegram Booking Bot</text>
+              <text x="244" y="267" font-family="Manrope,sans-serif" font-size="11" fill="#6B7280">Automation ·
+                Beauty</text>
+              <rect x="416" y="241" width="62" height="20" rx="10" fill="#D1FAE5" />
+              <text x="427" y="255" font-family="Manrope,sans-serif" font-size="10" font-weight="800" fill="#059669">●
+                Live</text>
+
+              <rect x="184" y="290" width="316" height="58" rx="12" fill="#F9FAFB" />
+              <rect x="200" y="305" width="34" height="34" rx="8" fill="#FEF3C7" />
+              <text x="208" y="327" font-family="sans-serif" font-size="16">✍️</text>
+              <text x="244" y="321" font-family="Manrope,sans-serif" font-size="13" font-weight="700"
+                fill="#111827">Content + SEO System</text>
+              <text x="244" y="337" font-family="Manrope,sans-serif" font-size="11" fill="#6B7280">B2B · 15
+                articles/mo</text>
+              <rect x="416" y="311" width="62" height="20" rx="10" fill="#D1FAE5" />
+              <text x="427" y="325" font-family="Manrope,sans-serif" font-size="10" font-weight="800" fill="#059669">●
+                Live</text>
+
+              <!-- Bar chart bottom -->
+              <rect x="184" y="362" width="316" height="70" rx="12" fill="#F9FAFB" />
+              <text x="200" y="382" font-family="Manrope,sans-serif" font-size="10" font-weight="700" fill="#9CA3AF"
+                letter-spacing="0.08em">REVENUE GROWTH — 2025</text>
+              <rect x="200" y="418" width="26" height="14" rx="3" fill="#BFDBFE" />
+              <rect x="234" y="410" width="26" height="22" rx="3" fill="#93C5FD" />
+              <rect x="268" y="402" width="26" height="30" rx="3" fill="#60A5FA" />
+              <rect x="302" y="394" width="26" height="38" rx="3" fill="#3B82F6" />
+              <rect x="336" y="384" width="26" height="48" rx="3" fill="#2563EB" />
+              <rect x="370" y="376" width="26" height="56" rx="3" fill="#1D4ED8" />
+              <rect x="404" y="366" width="26" height="66" rx="3" fill="#1E40AF" />
+              <text x="466" y="385" font-family="Manrope,sans-serif" font-size="11" font-weight="800" fill="#059669">↑
+                3×</text>
+            </svg>
+
+            <!-- Float badge bottom-left -->
+            <div
+              style="position:absolute;bottom:8px;left:-20px;background:#fff;border:1.5px solid #E5E7EB;border-radius:12px;padding:11px 16px;box-shadow:0 8px 32px rgba(0,0,0,.1);display:flex;align-items:center;gap:12px;z-index:2">
+              <div
+                style="width:36px;height:36px;background:rgba(16,185,129,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:17px">
+                ⚡</div>
+              <div>
+                <div style="font-size:15px;font-weight:800;color:#111827;line-height:1.1">3× faster</div>
+                <div style="font-size:11px;color:#6B7280;margin-top:1px">than a traditional agency</div>
+              </div>
+            </div>
+
+            <!-- Top-right badge -->
+            <div
+              style="position:absolute;top:-14px;right:-14px;background:#2563EB;color:#fff;border-radius:10px;padding:9px 16px;box-shadow:0 8px 24px rgba(37,99,235,.4);font-size:12px;font-weight:800;z-index:2">
+              US &amp; EU Clients 🌍
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ LOGOS ═══ -->
+  <div id="logos">
+    <div class="wrap">
+      <p class="logos-label" data-i18n="stat-1-l">Clients from</p>
+      <div class="logos-row">
+        <div class="logo-item" data-i18n="country-us">United States</div>
+        <div class="logo-item" data-i18n="country-uk">United Kingdom</div>
+        <div class="logo-item" data-i18n="country-de">Germany</div>
+        <div class="logo-item" data-i18n="country-nl">Netherlands</div>
+        <div class="logo-item" data-i18n="country-ca">Canada</div>
+        <div class="logo-item" data-i18n="country-au">Australia</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══ PAIN POINTS ═══ -->
+  <section id="pain" class="dark-section">
+    <div class="wrap">
+      <div class="pain-intro">
+        <div class="pain-intro-text">
+          <span class="label" data-i18n="pain-label">The Real Problem</span>
+          <h2 class="section-h" style="color:#fff" data-i18n="pain-h">Most businesses are losing money through the cracks they can't see.
+          </h2>
+        </div>
+        <div class="pain-intro-quote" data-i18n="pain-quote">
+          You're running ads, attending networking events, posting on social media — but your <strong>backend processes,
+            website, and follow-up systems are silently killing your conversion rate</strong> every single day.
+        </div>
+      </div>
+
+      <div class="pain-grid">
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">01</span>
+            <span class="pain-emoji">🌐</span>
+          </div>
+          <h3 data-i18n="pain-1-h">Your website looks fine — but it doesn't sell</h3>
+          <p data-i18n="pain-1-p">Visitors land, scroll, and leave. No action taken. Your site doesn't speak to their problem, doesn't answer objections, and doesn't guide them toward buying. <strong>That's traffic turning into nothing.</strong></p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">02</span>
+            <span class="pain-emoji">🔥</span>
+          </div>
+          <h3 data-i18n="pain-2-h">Hot leads go cold before anyone responds</h3>
+          <p data-i18n="pain-2-p">A prospect fills out your form at 9 PM Friday. By Monday, they've hired your competitor who replied within minutes. <strong>Every hour without a response costs you real money.</strong></p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">03</span>
+            <span class="pain-emoji">🔁</span>
+          </div>
+          <h3 data-i18n="pain-3-h">Your team wastes hours on repetitive manual work</h3>
+          <p data-i18n="pain-3-p">Copy-pasting data between systems. Manually sending follow-up emails. Updating spreadsheets. These are $15/hour tasks eating $80/hour employee time — every single day.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">04</span>
+            <span class="pain-emoji">💸</span>
+          </div>
+          <h3 data-i18n="pain-4-h">You paid an agency and got little ROI</h3>
+          <p data-i18n="pain-4-p">$5,000 for a website that underperforms. Months of delays. Vague deliverables. You did the agency's job of explaining your business — and still got something generic. <strong>It shouldn't work this way.</strong></p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">05</span>
+            <span class="pain-emoji">📊</span>
+          </div>
+          <h3 data-i18n="pain-5-h">You can't see what's actually working</h3>
+          <p data-i18n="pain-5-p">No clear analytics. No funnel data. You're making marketing decisions based on gut feeling because nothing is tracked or connected. Without data, you can't optimize — you can only guess.</p>
+        </div>
+
+        <div class="pain-card">
+          <div class="pain-card-top">
+            <span class="step-num">06</span>
+            <span class="pain-emoji">⚙️</span>
+          </div>
+          <h3 data-i18n="pain-6-h">Your tools don't work together</h3>
+          <p data-i18n="pain-6-p">CRM here. Email tool there. Payments somewhere else. Every handoff between systems is a manual step — and every manual step creates delays, errors, and lost customers. <strong>Your tech is slowing you down.</strong></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ SERVICES ═══ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="services-header">
+        <div>
+          <span class="label" data-i18n="srv-label">What We Do</span>
+          <h2 class="section-h" data-i18n="srv-h">End-to-end digital services<br>for businesses that mean business</h2>
+        </div>
+        <p class="section-p" data-i18n="srv-p">We don't do one thing. We cover your entire digital stack — from the first impression to
+          the final automation.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="srv-card" id="srv-1">
+          <div class="srv-icon">🌐</div>
+          <h3 data-i18n="srv-1-h">Web Development</h3>
+          <p data-i18n="srv-1-p">Custom websites and landing pages engineered to convert visitors into customers. Fast, mobile-first,
+            SEO-ready — and built around your business goals, not templates.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-0">Custom Design</span></span>
+            <span class="srv-tag"><span data-i18n="tag-1">CMS Integration</span></span>
+            <span class="srv-tag"><span data-i18n="tag-2">Performance</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-1">From $800 · $49/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-2">
+          <div class="srv-icon">💻</div>
+          <h3 data-i18n="srv-2-h">Software Development</h3>
+          <p data-i18n="srv-2-p">Custom web applications, dashboards, MVPs, and SaaS platforms. We translate your business logic into
+            scalable software that actually fits how your company operates.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-3">Web Apps</span></span>
+            <span class="srv-tag"><span data-i18n="tag-4">SaaS MVP</span></span>
+            <span class="srv-tag"><span data-i18n="tag-5">Dashboards</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-2">From $2,500 · $149/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-3">
+          <div class="srv-icon">⚙️</div>
+          <h3 data-i18n="srv-3-h">Business Automation</h3>
+          <p data-i18n="srv-3-p">Eliminate repetitive tasks by connecting your tools. Forms → CRM → emails → notifications — all automatic.
+            Every hour saved here goes directly back to your bottom line.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-6">Make / Zapier</span></span>
+            <span class="srv-tag"><span data-i18n="tag-7">API Connections</span></span>
+            <span class="srv-tag"><span data-i18n="tag-8">Workflows</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-3">From $700 · $49/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-4">
+          <div class="srv-icon">🤖</div>
+          <h3 data-i18n="srv-4-h">Chatbots &amp; Telegram Bots</h3>
+          <p data-i18n="srv-4-p">AI-powered assistants and Telegram bots that handle lead qualification, appointment booking, payments,
+            support, and notifications — 24/7, without adding headcount.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-9">AI Chatbot</span></span>
+            <span class="srv-tag"><span data-i18n="tag-10">Telegram Bot</span></span>
+            <span class="srv-tag">Booking &amp; Payments</span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-4">From $1,000 · $79/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-5">
+          <div class="srv-icon">🗂️</div>
+          <h3 data-i18n="srv-5-h">CRM Integration &amp; Setup</h3>
+          <p data-i18n="srv-5-p">We configure, connect, and automate your CRM — so leads never slip through. HubSpot, Notion, Airtable,
+            Pipedrive — fully integrated with your website and communication channels.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-12">HubSpot</span></span>
+            <span class="srv-tag"><span data-i18n="tag-13">Airtable</span></span>
+            <span class="srv-tag"><span data-i18n="tag-14">Lead Scoring</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-5">From $600 · $49/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-6">
+          <div class="srv-icon">💳</div>
+          <h3 data-i18n="srv-6-h">Payment Integration</h3>
+          <p data-i18n="srv-6-p">Stripe, LemonSqueezy, PayPal — wired into your site, your CRM, and your fulfillment workflow. One-time,
+            subscriptions, upsells. Online payments should just work.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-15">Stripe</span></span>
+            <span class="srv-tag"><span data-i18n="tag-16">Subscriptions</span></span>
+            <span class="srv-tag"><span data-i18n="tag-17">Webhooks</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-6">From $450 · $49/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-7">
+          <div class="srv-icon">🎨</div>
+          <h3 data-i18n="srv-7-h">Web &amp; UI Design</h3>
+          <p data-i18n="srv-7-p">Design that earns trust before a word is read. Clean, professional visual systems — from brand identity and
+            UI kit to full product design — built to perform in the real world.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-18">UI/UX</span></span>
+            <span class="srv-tag"><span data-i18n="tag-19">Brand Identity</span></span>
+            <span class="srv-tag"><span data-i18n="tag-20">Figma</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-7">From $500 · $49/mo maintenance</div>
+        </div>
+
+        <div class="srv-card" id="srv-8">
+          <div class="srv-icon">✍️</div>
+          <h3 data-i18n="srv-8-h">Content &amp; Copywriting</h3>
+          <p data-i18n="srv-8-p">Words that sell. We write website copy, email sequences, SEO articles, ad creatives, and social content —
+            all rooted in your audience's real objections and motivations.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-21">Website Copy</span></span>
+            <span class="srv-tag"><span data-i18n="tag-22">SEO Articles</span></span>
+            <span class="srv-tag"><span data-i18n="tag-23">Email Sequences</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-8">From $100/art · $500/mo retainer</div>
+        </div>
+
+        <div class="srv-card" id="srv-9">
+          <div class="srv-icon">🔬</div>
+          <h3 data-i18n="srv-9-h">Research &amp; Development</h3>
+          <p data-i18n="srv-9-p">Need something custom, experimental, or complex? We scope, prototype, and build — whether it's a new
+            product concept, AI pipeline, or an integration that doesn't exist yet.</p>
+          <div class="srv-tags">
+            <span class="srv-tag"><span data-i18n="tag-24">AI Pipelines</span></span>
+            <span class="srv-tag"><span data-i18n="tag-25">Prototyping</span></span>
+            <span class="srv-tag"><span data-i18n="tag-26">Custom Builds</span></span>
+          </div>
+          <div class="srv-price" data-i18n="srv-pr-9">Custom quote — let's talk</div>
+        </div>
+
+      </div>
+
+      <div class="srv-cta-row">
+        <div class="srv-cta-text">
+          <h3 data-i18n="srv-cta-h">Need something bigger or more specific?</h3>
+          <p data-i18n="srv-cta-p">Enterprise clients, complex scopes, and multi-phase projects are welcome. We offer dedicated teams, phased
+            delivery, and retainer arrangements.</p>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-i18n="srv-cta-btn">Request a Custom Quote <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ STATS ═══ -->
+  <section id="stats">
+    <div class="wrap">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-num">40<sup>+</sup></div>
+          <div class="stat-label" data-i18n="stat-1-l">Projects executed in USA &amp; EUROPE</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">98<sup>%</sup></div>
+          <div class="stat-label" data-i18n="stat-2-l">On-time delivery rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" data-i18n="stat-3-v">14 days</div>
+          <div class="stat-label" data-i18n="stat-3-l">Average time to launch</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">3×</div>
+          <div class="stat-label" data-i18n="stat-4-l">Faster than a traditional agency</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section id="how">
+    <div class="wrap">
+      <div class="how-grid">
+
+        <div>
+          <span class="label" data-i18n="how-label">Our Process</span>
+          <h2 class="section-h" style="margin-bottom:48px" data-i18n="how-h">Як ми проходимо шлях від ідеї до<br>готової системи</h2>
+
+          <div class="how-steps">
+            <div class="how-step active" onclick="selectStep(this, 0)">
+              <div class="step-num">01</div>
+              <div class="step-body">
+                <h3 data-i18n="how-1-h">Discovery Call — 30 minutes</h3>
+                <p data-i18n="how-1-p">We start with a real conversation. No intake forms, no templates. We dig into your business, your
+                  current bottlenecks, and what success actually looks like for you. You'll leave with clarity on
+                  exactly what to build and why — at zero cost.</p>
+              </div>
+            </div>
+            <div class="how-step" onclick="selectStep(this, 1)">
+              <div class="step-num">02</div>
+              <div class="step-body">
+                <h3 data-i18n="how-2-h">Scope &amp; Proposal — 24 hours</h3>
+                <p data-i18n="how-2-p">Within one business day, you receive a clear project scope: deliverables, timeline, fixed price, and
+                  technical approach. No vague estimates, no hidden fees. You know exactly what you're getting before
+                  you pay a cent.</p>
+              </div>
+            </div>
+            <div class="how-step" onclick="selectStep(this, 2)">
+              <div class="step-num">03</div>
+              <div class="step-body">
+                <h3 data-i18n="how-3-h">Build — 1 to 3 weeks</h3>
+                <p data-i18n="how-3-p">Our team handles everything: design, development, integrations, AI setup, copywriting, testing. You
+                  get regular progress updates and can provide feedback at defined review stages. No black boxes, no
+                  surprises.</p>
+              </div>
+            </div>
+            <div class="how-step" onclick="selectStep(this, 3)">
+              <div class="step-num">04</div>
+              <div class="step-body">
+                <h3 data-i18n="how-4-h">Launch &amp; Handover</h3>
+                <p data-i18n="how-4-p">We go live together. You get full access to everything, a walkthrough session, and written
+                  documentation. If something doesn't work as expected after launch, we fix it — that's part of every
+                  package.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-visual">
+          <div class="how-visual-card">
+            <div class="hvc-header">
+              <div class="hvc-dots">
+                <div class="hvc-dot" style="background:#FF6058"></div>
+                <div class="hvc-dot" style="background:#FFBD2E"></div>
+                <div class="hvc-dot" style="background:#29C940"></div>
+              </div>
+              <div class="hvc-title" data-i18n="chk-title">Project Checklist — Growth Package</div>
+            </div>
+            <div class="hvc-body">
+              <div class="hvc-checklist" id="how-checklist">
+                <div class="hvc-check" style="background:rgba(16,185,129,.06)"><span class="ck">✓</span> <span data-i18n="chk-1">Discovery call completed</span></div>
+                <div class="hvc-check" style="background:rgba(16,185,129,.06)"><span class="ck">✓</span> <span data-i18n="chk-2">Project scope approved</span></div>
+                <div class="hvc-check" style="background:rgba(16,185,129,.06)"><span class="ck">✓</span> <span data-i18n="chk-3">Design mockups approved</span></div>
+                <div class="hvc-check pending"><span class="ck"></span> <span data-i18n="chk-4">Landing page development</span></div>
+                <div class="hvc-check pending"><span class="ck"></span> <span data-i18n="chk-5">CRM integration &amp; automation</span></div>
+                <div class="hvc-check pending"><span class="ck"></span> <span data-i18n="chk-6">AI chatbot setup &amp; training</span></div>
+                <div class="hvc-check pending"><span class="ck"></span> <span data-i18n="chk-7">QA &amp; cross-device testing</span></div>
+                <div class="hvc-check pending"><span class="ck"></span> <span data-i18n="chk-8">Launch &amp; handover session</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ PORTFOLIO ═══ -->
+  <section id="portfolio">
+    <div class="wrap">
+      <span class="label" data-i18n="p-label">Portfolio</span>
+      <div class="portfolio-header"
+        style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;margin-bottom:40px">
+        <h2 class="section-h" style="margin-bottom:0" data-i18n="p-h">Work we're proud of</h2>
+        <p class="section-p" style="font-size:15px" data-i18n="p-sub">Real projects. Measurable results.</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- CASE 1: Online Course Platform -->
+        <div class="p-card">
+          <div class="p-thumb">
+            <img src="Projects/Full-Stack%20Online%20Learning%20Platform/el.png" alt="Online Learning Platform">
+            <span class="p-thumb-badge" data-i18n="p-1-b1">Web + Bot + CRM</span>
+            <span class="p-thumb-result" data-i18n="p-1-b2">7 days from scratch to launch</span>
+          </div>
+          <div class="p-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <div class="p-type" data-i18n="p-1-type">EdTech · Online Course Platform</div>
+              <div style="font-size:10px;font-weight:700;color:var(--text-light);background:var(--off);padding:2px 8px;border-radius:4px;border:1px solid var(--border)" data-i18n="p-1-loc">Ukraine</div>
+            </div>
+            <h3 class="p-title" data-i18n="p-1-title">Full-Stack Online Learning Platform</h3>
+            <p class="p-desc" data-i18n="p-1-desc">Built a complete online course infrastructure: adaptive landing page, Telegram bot as the learning platform (lessons, homework, progress tracking), CRM integration for student management, and automated Stripe payment notifications via webhooks. Students enroll, pay, and complete the course — all without a single manual step.</p>
+            <div class="p-result-callout" data-i18n="p-1-res">
+              <span>⚡ 100% automated enrollment → payment → content delivery pipeline</span>
+            </div>
+            <div class="p-tech">
+              <span><span data-i18n="tag-27">Web Design</span></span><span><span data-i18n="tag-28">Website Creation</span></span><span><span data-i18n="tag-29">AI Automation</span></span><span><span data-i18n="tag-30">Telegram Bot API</span></span><span><span data-i18n="tag-31">Stripe + Webhooks</span></span><span><span data-i18n="tag-32">CRM Integration</span></span><span><span data-i18n="tag-33">Database</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE 2: Passlink SaaS -->
+        <div class="p-card">
+          <div class="p-thumb">
+            <img src="Projects/PassLink/pl.png" alt="Passlink SaaS">
+            <span class="p-thumb-badge" data-i18n="p-2-b1">SaaS Platform</span>
+            <span class="p-thumb-result" data-i18n="p-2-b2">AI automated from day 1</span>
+          </div>
+          <div class="p-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <div class="p-type" data-i18n="p-2-type">SaaS · Link-in-Bio Builder</div>
+              <div style="font-size:10px;font-weight:700;color:var(--text-light);background:var(--off);padding:2px 8px;border-radius:4px;border:1px solid var(--border)" data-i18n="p-2-loc">USA</div>
+            </div>
+            <h3 class="p-title" data-i18n="p-2-title">Passlink — Mobile Landing Page Builder</h3>
+            <p class="p-desc" data-i18n="p-2-desc">Designed and built a full SaaS platform from zero. Users create branded mobile landing pages with custom links, social profiles, and CTAs. Includes subscription billing via Stripe, webhook-based Telegram notifications for payments and signups, and a full admin dashboard. Delivered end-to-end: UI/UX design, development, payments, infrastructure.</p>
+            <div class="p-result-callout" data-i18n="p-2-res">
+              <span>🚀</span> Full SaaS product delivered in 6 weeks · monetization-ready from day one
+            </div>
+            <div class="p-tech">
+              <span><span data-i18n="tag-34">Design</span></span><span><span data-i18n="tag-29">AI Automation</span></span><span><span data-i18n="tag-35">SaaS Architecture</span></span><span><span data-i18n="tag-36">Custom UI/UX</span></span><span><span data-i18n="tag-37">Stripe Subscriptions</span></span><span><span data-i18n="tag-17">Webhooks</span></span><span><span data-i18n="tag-38">Telegram Notifications</span></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CASE 3: ClickPay -->
+        <div class="p-card">
+          <div class="p-thumb">
+            <img src="Projects/ClickPay/cp4.png" alt="ClickPay Platform">
+            <span class="p-thumb-badge" data-i18n="p-3-b1">Web + TMA + Bot</span>
+            <span class="p-thumb-result" data-i18n="p-3-b2">10,000+ transactions</span>
+          </div>
+          <div class="p-body">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+              <div class="p-type" data-i18n="p-3-type">FinTech · Online Currency Exchange</div>
+              <div style="font-size:10px;font-weight:700;color:var(--text-light);background:var(--off);padding:2px 8px;border-radius:4px;border:1px solid var(--border)" data-i18n="p-3-loc">Ukraine</div>
+            </div>
+            <h3 class="p-title" data-i18n="p-3-title">ClickPay — Platform + Telegram Mini App</h3>
+            <p class="p-desc" data-i18n="p-3-desc">Built a complete online exchange service with a responsive website, custom copywriting, and a full Telegram ecosystem. The Telegram Mini App mirrors all website functionality — users check live rates, submit exchange requests, and complete transactions without leaving Telegram. The bot handles the full exchange flow: rate display, order creation, status updates, and admin notifications. Website and Telegram are fully synced in real time.</p>
+            <div class="p-result-callout" data-i18n="p-3-res">
+              <span>💱</span> Full website experience replicated inside Telegram — zero friction, maximum reach
+            </div>
+            <div class="p-tech">
+              <span><span data-i18n="tag-29">AI Automation</span></span><span><span data-i18n="tag-39">Adaptive Web Design</span></span><span>Custom Copywriting</span><span><span data-i18n="tag-40">Telegram Mini App</span></span><span><span data-i18n="tag-10">Telegram Bot</span></span><span><span data-i18n="tag-41">Real-time Sync</span></span><span><span data-i18n="tag-42">Exchange API</span></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="p-card p-placeholder">
+          <div class="p-placeholder-inner">
+            <div style="font-size:40px;margin-bottom:12px">🔜</div>
+            <h3 data-i18n="p-placeholder-h">Your project here</h3>
+            <p data-i18n="p-placeholder-p">We have room for 2–3 more clients this month. Let's talk.</p>
+            <a href="#contact" class="btn btn-primary btn-soon" data-i18n="p-placeholder-btn">Scale My Business →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ TESTIMONIALS ═══ -->
+  <section id="testimonials">
+    <div class="wrap">
+      <div class="section-header-left" style="margin-bottom:56px">
+        <span class="label" data-i18n="t-label">Client Stories</span>
+        <h2 class="section-h" data-i18n="t-h">What our clients say</h2>
+        <p class="section-p" data-i18n="t-sub">Business owners across the US and Europe who made the switch.</p>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="t-card">
+          <div class="t-logo" data-i18n="t-1-logo">Charity · Ukraine</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text" data-i18n="t-1-text">"In the current environment in Ukraine, speed is a necessity. You can’t drive impact without a digital presence — people need to find you online. What other agencies promised in three weeks, the Perazim team delivered in just four days. Fast, flawless, and it just works."</p>
+          <div class="t-author">
+            <div class="t-avatar">👔</div>
+            <div>
+              <div class="t-name">Yurii K.</div>
+              <div class="t-role" data-i18n="t-1-role">CEO, Charitable Foundation · Kyiv, UA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-logo" data-i18n="t-2-logo">Online Education · Ukraine</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text" data-i18n="t-2-text">"What impressed me most was that they understood my business from the first call — not just the technical side, but the actual customer journey and psychology. The new site and chatbot integration didn’t just look good; it doubled my lead-to-call conversion rate."</p>
+          <div class="t-author">
+            <div class="t-avatar">✨</div>
+            <div>
+              <div class="t-name">Olexandra S.</div>
+              <div class="t-role" data-i18n="t-2-role">Influencer & Educator · Lviv, UA</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="t-logo" data-i18n="t-3-logo">SaaS · Lithuania</div>
+          <div class="t-stars">★★★★★</div>
+          <p class="t-text" data-i18n="t-3-text">"Clear scope. Delivered on time. I don’t have to say more — but I will: the quality of thinking behind every decision surprised me. They actually pushed back on one of my ideas to protect the product's scalability, and they were absolutely right."</p>
+          <div class="t-author">
+            <div class="t-avatar">🚀</div>
+            <div>
+              <div class="t-name">Peter K.</div>
+              <div class="t-role" data-i18n="t-3-role">Co-founder, SaaS · Vilnius, LT</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ PRICING ═══ -->
+  <section id="packages">
+    <div class="wrap">
+      <div class="section-header-left" style="margin-bottom:56px">
+        <span class="label" data-i18n="pr-label">Packages</span>
+        <h2 class="section-h" data-i18n="pr-h">Transparent pricing.<br>No scope creep. No surprises.</h2>
+        <p class="section-p" data-i18n="pr-sub">Every package includes a strategy call, full handover, and post-launch support window.</p>
+      </div>
+
+      <div class="pricing-grid">
+
+        <!-- STARTER -->
+        <div class="pr-card">
+          <div class="pr-name" data-i18n="pr-1-name">Starter</div>
+          <div class="pr-price"><span data-i18n="pr-from"><span style="font-size: 16px; font-weight: 600; vertical-align: middle; margin-right: 4px; opacity: 0.8;">from</span></span><span data-i18n="pr-st-p"><sup>$</sup>1,200</span></div>
+          <p class="pr-period" data-i18n="pr-st-sub">One-time setup · $49/mo maintenance</p>
+          <ul class="pr-features">
+            <li><span class="ck">✓</span><span data-i18n="pr-st-1"><strong>High-converting landing page</strong> (5–7 sections)</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-2"><strong>Lead capture form</strong> with validation</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-3"><strong>Telegram notification</strong> on new leads</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-4">Thank you page with next-step CTA</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-5">Mobile-first, performance-optimized</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-6">Conversion-focused copywriting</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-st-7">2 weeks post-launch support</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center" data-i18n="pr-btn">Check Availability</a>
+          <p class="pr-note" data-i18n="pr-st-note">50% upfront · 50% on delivery</p>
+        </div>
+
+        <!-- GROWTH (FEATURED) -->
+        <div class="pr-card featured">
+          <div class="pr-badge" data-i18n="pr-featured">Most Popular</div>
+          <div class="pr-name" data-i18n="pr-2-name">Growth System</div>
+          <div class="pr-price"><span data-i18n="pr-from"><span style="font-size: 16px; font-weight: 600; vertical-align: middle; margin-right: 4px; opacity: 0.8;">from</span></span><span data-i18n="pr-gr-p"><sup>$</sup>3,200</span></div>
+          <p class="pr-period" data-i18n="pr-gr-sub">One-time setup · $149/mo maintenance</p>
+          <ul class="pr-features">
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-1">Everything in Starter</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-2"><strong>AI chatbot</strong> trained on your business</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-3"><strong>CRM setup</strong> + lead pipeline automation</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-4"><strong>Email follow-up sequence</strong> (3–5 emails)</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-5">Payment integration (Stripe)</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-6">Lead scoring &amp; qualification logic</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-7">Analytics dashboard setup</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-gr-8">30 days post-launch support</span></li>
+          </ul>
+          <a href="#contact" class="btn pr-btn-featured btn-lg" style="width:100%;justify-content:center" data-i18n="pr-btn">Check Availability</a>
+          <p class="pr-note" data-i18n="pr-gr-note">Most clients see ROI within 30–60 days</p>
+        </div>
+
+        <!-- ENTERPRISE -->
+        <div class="pr-card">
+          <div class="pr-name" data-i18n="pr-3-name">Enterprise / Custom</div>
+          <div class="pr-price" style="font-size:40px;letter-spacing:-.02em;padding-top:8px" data-i18n="pr-en-p">Let's Scope</div>
+          <p class="pr-period" data-i18n="pr-en-sub">Tailored to your business goals</p>
+          <ul class="pr-features">
+            <li><span class="ck">✓</span><span data-i18n="pr-en-1">Everything in Growth</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-2"><strong>Multi-page website</strong> or web application</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-3"><strong>Custom software</strong> development</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-4">Complex AI automation pipelines</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-5">Team training &amp; documentation</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-6">Ongoing retainer available</span></li>
+            <li><span class="ck">✓</span><span data-i18n="pr-en-7">Dedicated project manager</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-ghost" style="width:100%;justify-content:center" data-i18n="pr-btn">Check Availability</a>
+          <p class="pr-note" data-i18n="pr-en-note">NDA available before any discussions</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FAQ ═══ -->
+  <section id="faq">
+    <div class="wrap">
+      <div class="faq-wrap">
+        <div class="faq-sidebar">
+          <span class="label" data-i18n="faq-label">FAQ</span>
+          <h2 class="section-h" data-i18n="faq-h">Questions we get from every serious buyer</h2>
+          <p class="section-p" data-i18n="faq-sub">If yours isn't here — just reach out. We respond within 24 hours.</p>
+          <a href="#contact" class="btn btn-primary" style="margin-top:8px" data-i18n="faq-btn">Ask a Question →</a>
+        </div>
+
+        <div class="faq-list">
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-1-q">
+              Who is on your team — what's the actual size?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-1-a">We're a focused team of specialists — a developer, designer, copywriter, and automation
+              engineer — working together under one project manager. You get the output of a full-service agency without
+              the overhead, delays, or internal miscommunication that comes with large organizations.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-2-q">
+              How is this different from hiring a freelancer or a large agency?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-2-a">A freelancer is one person — limited bandwidth, one skill set, and no accountability
+              structure. A large agency adds layers of account managers, project coordinators, and hand-offs that slow
+              everything down and inflate costs. We offer the speed and directness of a freelancer with the depth of a
+              multi-disciplinary team — and a fixed-price contract so you know exactly what you're paying for.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-3-q">
+              What if I'm not sure what I need?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-3-a">That's exactly what the discovery call is for. We've worked with founders who came in
+              saying "I need a website" and left with a clear plan for a full automation system — or vice versa. You
+              don't need to know the solution. You just need to know the problem. We'll figure out the rest together.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-4-q">
+              How long does a project actually take?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-4-a">Starter (landing page + lead form): 5–7 business days. Growth package (full system with
+              chatbot, CRM, and automation): 10–14 business days. Custom enterprise builds are scoped individually. The
+              biggest variable is how quickly you can provide feedback at key review points. We keep the process moving
+              — we just need you responsive when we ask questions.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-5-q">
+              What do I need to provide to get started?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-5-a">Minimum: a description of your business, your target customer, and any existing branding
+              (logo, colors, domain). We handle the rest — copy, structure, design, integrations. No lengthy briefs
+              required. The discovery call replaces most onboarding documentation.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-6-q">
+              What if something breaks after launch?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-6-a">We don’t believe in "launch and leave." To ensure your infrastructure scales without hiccups, every package includes a dedicated monthly maintenance retainer. This means we’re always on standby to fix issues, perform updates, and ensure peak performance — so you never have to worry about downtime or hidden costs.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-7-q">
+              How do payments work?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-7-a">50% upfront to start, 50% on delivery and approval. We accept Bank Transfers, PayPal, and Cryptocurrency. For enterprise retainers, we offer monthly billing. If we don't deliver what was agreed in the scope document — you get a full refund of the upfront payment. We've never had to execute that clause, but it's there.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-q" onclick="toggleFaq(this)" data-i18n="faq-8-q">
+              Can you sign an NDA before we discuss the project?
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-a" data-i18n="faq-8-a">Absolutely. We're happy to sign a mutual NDA before any project discussions. Just mention
+              it when you book the call and we'll have it ready within 24 hours. Your business details, IP, and
+              competitive information stay confidential — always.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CTA STRIP ═══ -->
+  <section id="cta-strip">
+    <div class="wrap">
+      <div class="cta-inner">
+        <h2 data-i18n="strip-h">Ready to stop losing leads<br>to <span>broken systems?</span></h2>
+        <div class="cta-right">
+          <a href="#contact" class="btn btn-white btn-lg"><span data-i18n="hero-cta-check">Check Availability</span> <span class="arrow">→</span></a>
+          <a href="#portfolio" class="btn" data-i18n="hero-cta-portfolio"
+            style="background:rgba(255,255,255,.1);color:#fff;border:1.5px solid rgba(255,255,255,.2)">See Results in Action</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <div class="contact-left">
+          <span class="label" data-i18n="cont-label">Get In Touch</span>
+          <h2 class="section-h" data-i18n="cont-h">Let's build something<br>worth investing in.</h2>
+          <p class="section-p" data-i18n="cont-p">Fill in the form and we'll get back to you within 24 hours to schedule your free
+            discovery call. No pressure, no pitch deck — just a real conversation about your business.</p>
+
+          <ul class="contact-points">
+            <li class="contact-point">
+              <div class="cp-icon">⚡</div>
+              <div>
+                <div class="cp-title" data-i18n="cont-1-t">Fast response</div>
+                <div class="cp-val" data-i18n="cont-1-v">We reply within 24 hours, often same day</div>
+              </div>
+            </li>
+            <li class="contact-point">
+              <div class="cp-icon">🌍</div>
+              <div>
+                <div class="cp-title" data-i18n="cont-2-t">US & EU timezone friendly</div>
+                <div class="cp-val" data-i18n="cont-2-v">Available for calls Mon–Fri, 9am–7pm EST / CET</div>
+              </div>
+            </li>
+            <li class="contact-point">
+              <div class="cp-icon">🔒</div>
+              <div>
+                <div class="cp-title" data-i18n="cont-3-t">NDA available on request</div>
+                <div class="cp-val" data-i18n="cont-3-v">Signed within 24 hours before any discussion</div>
+              </div>
+            </li>
+            <li class="contact-point">
+              <div class="cp-icon">📧</div>
+              <div>
+                <a href="mailto:hello@perazim.systems" class="cp-title" style="text-decoration:none;display:block">hello@perazim.systems</a>
+                <p class="cp-val" data-i18n="cont-4-v">Or reach us directly if you prefer email</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="contact-form-card">
+            <div id="form-body">
+              <div class="form-row">
+                <div class="fg">
+                  <label for="fn" data-i18n="f-fn">First Name *</label>
+                  <input type="text" id="fn" placeholder="John" />
+                </div>
+                <div class="fg">
+                  <label for="ln" data-i18n="f-ln">Last Name *</label>
+                  <input type="text" id="ln" placeholder="Smith" />
+                </div>
+              </div>
+              <div class="fg full">
+                <label for="em" data-i18n="f-em">Work Email *</label>
+                <input type="email" id="em" placeholder="john@company.com" />
+              </div>
+              <div class="fg full">
+                <label for="co" data-i18n="f-co">Company / Business</label>
+                <input type="text" id="co" placeholder="Acme Inc." />
+              </div>
+              <div class="fg full">
+                <label for="sv" data-i18n="f-sv">I'm interested in</label>
+                <select id="sv">
+                  <option value="" data-i18n="f-sv-opt-0">Select a service</option>
+                  <option data-i18n="f-sv-opt-1">Web Development</option>
+                  <option data-i18n="f-sv-opt-2">Software Development</option>
+                  <option data-i18n="f-sv-opt-3">Business Automation</option>
+                  <option data-i18n="f-sv-opt-4">AI Chatbot / Telegram Bot</option>
+                  <option data-i18n="f-sv-opt-5">CRM Integration</option>
+                  <option data-i18n="f-sv-opt-6">Payment Integration</option>
+                  <option data-i18n="f-sv-opt-7">Content &amp; Copywriting</option>
+                  <option data-i18n="f-sv-opt-8">Full Growth Package</option>
+                  <option data-i18n="f-sv-opt-9">Enterprise / Custom Project</option>
+                  <option data-i18n="f-sv-opt-10">Not sure — I want to talk it through</option>
+                </select>
+              </div>
+              <div class="fg full">
+                <label for="bd" data-i18n="f-bd">Budget Range</label>
+                <select id="bd">
+                  <option value="" data-i18n="f-bd-opt-0">Select budget</option>
+                  <option data-i18n="f-bd-opt-1">Under $500</option>
+                  <option data-i18n="f-bd-opt-2">$500 – $1,200</option>
+                  <option data-i18n="f-bd-opt-3">$1,200 – $3,000</option>
+                  <option data-i18n="f-bd-opt-4">$3,000 – $7,000</option>
+                  <option data-i18n="f-bd-opt-5">$7,000 – $15,000</option>
+                  <option data-i18n="f-bd-opt-6">$15,000+</option>
+                </select>
+              </div>
+              <div class="fg full">
+                <label for="ms" data-i18n="f-ms">Tell us about your business &amp; the problem you want to solve *</label>
+                <textarea id="ms" rows="4"
+                  placeholder="E.g. We run a real estate agency. We get leads from ads but nobody follows up fast enough, and our website isn't converting. We want to automate lead handling and build a better site…"></textarea>
+              </div>
+              <div class="form-footer">
+                <button type="submit" class="btn btn-primary btn-lg" style="width:100%; justify-content:center">
+                  <span data-i18n="f-btn">Check Availability</span> <span class="arrow">→</span>
+                </button>
+                <p style="font-size:12px;color:#6B7280;text-align:center;margin-top:12px" data-i18n="f-note">No spam. No cold pitches. Just
+                  your free discovery call.</p>
+              </div>
+            </div>
+
+            <!-- THANK YOU STATE -->
+            <div class="form-success-box" id="form-ty">
+              <div class="fsb-icon">🎉</div>
+              <div class="fsb-title" data-i18n="f-success-t">Message received!</div>
+              <p class="fsb-text" data-i18n="f-success-p">We'll get back to you <strong style="color:#F9FAFB">within 24 hours</strong> to
+                schedule your free discovery call.<br><br>While you wait, feel free to look through our portfolio or check out the FAQ
+                  section.<br><br>Talk soon 👋</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="f-brand">
+          <a href="#" class="logo" style="color:#fff;margin-bottom:12px;display:block">
+            <span class="logo-text">perazim</span><span class="logo-systems">.systems</span>
+          </a>
+          <p data-i18n="foot-sub">We build digital products and automation systems that help businesses in the US and Europe grow faster, convert better, and operate smarter.</p>
+          
+          <div class="footer-contact-info">
+            <a href="mailto:hello@perazim.systems" class="f-mail">hello@perazim.systems</a>
+            <div class="f-socials-row">
+              <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+              <a href="#" aria-label="TikTok"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.9-.32-1.98-.23-2.81.31-.75.42-1.24 1.25-1.33 2.1-.1.7.1 1.41.53 1.98.5.73 1.36 1.15 2.24 1.18.7-.02 1.38-.27 1.92-.72.55-.44.89-1.08.99-1.77.13-1.44.05-2.88.07-4.32.01-5.17-.01-10.34.02-15.51z"/></svg></a>
+              <a href="#" aria-label="X"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932L18.901 1.153zM17.61 20.644h2.039L6.486 3.24H4.298L17.61 20.644z"/></svg></a>
+            </div>
+          </div>
+        </div>
+        <div class="f-col">
+          <h4 data-i18n="foot-h1">What We Do</h4>
+          <a href="#srv-1" data-i18n="srv-1-h">Web Development</a>
+          <a href="#srv-2" data-i18n="srv-2-h">Software Development</a>
+          <a href="#srv-3" data-i18n="srv-3-h">Business Automation</a>
+          <a href="#srv-4" data-i18n="srv-4-h">Chatbots &amp; Telegram Bots</a>
+          <a href="#srv-5" data-i18n="srv-5-h">CRM Integration &amp; Setup</a>
+          <a href="#srv-6" data-i18n="srv-6-h">Payment Integration</a>
+          <a href="#srv-7" data-i18n="srv-7-h">Web &amp; UI Design</a>
+          <a href="#srv-8" data-i18n="srv-8-h">Content &amp; Copywriting</a>
+          <a href="#srv-9" data-i18n="srv-9-h">Research &amp; Development</a>
+        </div>
+        <div class="f-col">
+          <h4 data-i18n="foot-h2">Company</h4>
+          <a href="#services" data-i18n="nav-services">Services</a>
+          <a href="#portfolio" data-i18n="nav-portfolio">Portfolio</a>
+          <a href="#packages" data-i18n="nav-packages">Packages</a>
+          <a href="#faq" data-i18n="nav-faq">FAQ</a>
+          <a href="#contact" data-i18n="cont-label">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="foot-rights">© 2019-2026 Perazim Systems · All rights reserved</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html" class="f-policy" data-i18n="foot-privacy">Privacy Policy</a>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══ POPUP (60% scroll trigger) ═══ -->
+  <div id="popup-overlay" onclick="closePopupOutside(event)">
+    <div class="popup" id="popup-box">
+      <button class="popup-close" onclick="closePopup()">✕</button>
+      <span class="label" data-i18n="pop-label">Free Audit</span>
+      <h3 data-i18n="pop-h">Get a Free Digital Audit for Your Business</h3>
+      <p data-i18n="pop-p">Leave your email and we'll personally review your current online presence and send you 3 specific, actionable
+        improvements — for free, within 48 hours.</p>
+      <div>
+        <input type="email" id="popup-email" placeholder="your@email.com" style="margin-bottom:12px" />
+        <button class="btn btn-primary" style="width:100%;justify-content:center;font-size:15px;"
+          onclick="submitPopup()" data-i18n="pop-btn">Send Me the Free Audit →</button>
+      </div>
+      <p class="popup-note" data-i18n="pop-note">No spam. Sent within 48 hours. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+
+  <!-- ═══ JS ═══ -->
+  <script src="main.js"></script>
+</body>
+
+</html>
