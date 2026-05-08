@@ -37,23 +37,28 @@ export default async function handler(req, res) {
     });
 
     // 2. Send to Google Sheets (Apps Script)
-    const params = new URLSearchParams();
-    params.append('source', source);
+    const googleFormData = new URLSearchParams();
+    googleFormData.append('source', source);
     if (source === 'audit') {
-      params.append('email', email);
+      googleFormData.append('email', email);
     } else {
-      params.append('name', name);
-      params.append('email', email);
-      params.append('company', company);
-      params.append('service', service);
-      params.append('budget', budget);
-      params.append('message', message);
+      googleFormData.append('name', name || '');
+      googleFormData.append('email', email || '');
+      googleFormData.append('company', company || '');
+      googleFormData.append('service', service || '');
+      googleFormData.append('budget', budget || '');
+      googleFormData.append('message', message || '');
     }
 
-    await fetch(GOOGLE_URL, {
-      method: 'POST',
-      body: params
-    });
+    try {
+      await fetch(GOOGLE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: googleFormData.toString()
+      });
+    } catch (gError) {
+      console.error('Google Sheets Error:', gError);
+    }
 
     return res.status(200).json({ success: true });
   } catch (error) {
