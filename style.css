@@ -452,7 +452,7 @@ footer{background:#080C14;padding:56px 60px 32px !important}
     box-shadow:0 10px 20px rgba(0,0,0,.05)
   }
   .nav-menu.active{display:flex}
-  .nav-menu a{padding:12px 16px;border-bottom:1px solid var(--off);width:100%;border-radius:8px}
+  .nav-menu a{padding:8px 16px;width:100%;border-radius:8px}
   .hamburger{display:flex;margin-left:8px}
   .nav-actions{margin-left:auto;display:flex;align-items:center}
   .nav-actions .btn-primary{display:inline-flex}
