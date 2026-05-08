@@ -399,7 +399,7 @@ footer{background:#080C14;padding:56px 60px 32px !important}
 #popup-overlay.on{display:flex}
 .popup{background:#fff;border-radius:var(--radius-lg);max-width:460px;width:100%;padding:48px 40px;position:relative;animation:popIn .3s cubic-bezier(.22,1,.36,1)}
 @keyframes popIn{from{opacity:0;transform:scale(.9) translateY(16px)}to{opacity:1;transform:scale(1) translateY(0)}}
-.popup-close{position:absolute;top:16px;right:16px;background:var(--off);border:none;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px;color:var(--text-light);display:flex;align-items:center;justify-content:center;transition:background .15s}
+.popup-close{position:absolute;top:16px;right:16px;background:var(--off);border:none;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px;line-height:34px;color:var(--text-light);display:flex;align-items:center;justify-content:center;padding:0;transition:background .15s}
 .popup-close:hover{background:var(--border)}
 .popup .label{margin-bottom:12px}
 .popup h3{font-size:24px;font-weight:800;margin-bottom:8px;line-height:1.25;color:var(--text)}
