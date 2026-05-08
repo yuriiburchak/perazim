@@ -135,10 +135,16 @@ function submitForm(){
   })
   .then(res => res.json())
   .then(data => {
-    document.getElementById('form-body').style.display='none'
-    const ty=document.getElementById('form-ty')
-    ty.classList.add('on')
-    ty.scrollIntoView({behavior:'smooth',block:'center'})
+    const successTitle = currentLang === 'ua' ? 'Заявка отримана!' : 'Message received!';
+    const successMsg = currentLang === 'ua' ? 'Ми зв’яжемося з вами <strong>протягом 24 годин</strong> для узгодження дзвінка.<br><br>До зв’язку 👋' : 'We\'ll get back to you <strong>within 24 hours</strong> to schedule your free discovery call.<br><br>Talk soon 👋';
+
+    document.getElementById('form-body').innerHTML = `
+      <div style="text-align:center;padding:40px 0">
+        <div style="font-size:64px;margin-bottom:20px">✅</div>
+        <h3 style="font-size:26px;font-weight:800;margin-bottom:12px;color:var(--text)">${successTitle}</h3>
+        <p style="color:var(--text-light);line-height:1.7;font-size:16px">${successMsg}</p>
+      </div>
+    `;
   })
   .catch(err => {
     alert(currentLang === 'ua' ? 'Помилка відправки. Спробуйте пізніше.' : 'Submission error. Please try again later.');
