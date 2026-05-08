@@ -62,8 +62,8 @@ const translations = {
     "srv-cta-btn": "Request a Custom Quote",
 
     // Stats
-    "stat-1-l": "Projects executed in United States & Europe",
-    "stat-1-v": "USA & EUROPE",
+    "stat-1-l": "Clients from",
+    "country-us": "United States",
     "country-uk": "United Kingdom",
     "country-de": "Germany",
     "country-nl": "Netherlands",
@@ -452,8 +452,13 @@ const translations = {
     "srv-cta-btn": "Запитати вартість",
 
     // Stats
-    "stat-1-l": "Виконаних проектів у США & Європі",
-    "stat-1-v": "США & Європі",
+    "stat-1-l": "ВИКОНАНИХ ПРОЕКТІВ У США & ЄВРОПІ",
+    "country-us": "Сполучені Штати",
+    "country-uk": "Велика Британія",
+    "country-de": "Німеччина",
+    "country-nl": "Нідерланди",
+    "country-ca": "Канада",
+    "country-au": "Австралія",
     "stat-2-l": "Вчасна доставка проектів",
     "stat-3-l": "Середній час до запуску",
     "stat-3-v": "14 діб",
