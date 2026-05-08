@@ -65,9 +65,15 @@ window.addEventListener('scroll',()=>{
 function closePopup(){document.getElementById('popup-overlay').classList.remove('on')}
 function closePopupOutside(e){if(e.target===document.getElementById('popup-overlay'))closePopup()}
 function submitPopup(){
-  const email=document.getElementById('popup-email').value
-  if(!email||!email.includes('@')){
-    alert(currentLang === 'ua' ? 'Будь ласка, введіть коректний email.' : 'Please enter a valid email.');
+  const emailInput = document.getElementById('popup-email');
+  const email = emailInput.value.trim();
+  
+  // Email validation regex (Latin only, valid format)
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if(!email || !emailRegex.test(email)){
+    alert(currentLang === 'ua' ? 'Будь ласка, введіть коректний email (тільки латиниця).' : 'Please enter a valid email address (Latin characters only).');
+    emailInput.focus();
     return;
   }
 
@@ -98,20 +104,30 @@ function submitPopup(){
 
 // Contact form
 function submitForm(){
-  const fn=document.getElementById('fn').value
-  const ln=document.getElementById('ln').value
-  const em=document.getElementById('em').value
-  const co=document.getElementById('co').value
+  const fn=document.getElementById('fn').value.trim()
+  const ln=document.getElementById('ln').value.trim()
+  const emInput=document.getElementById('em')
+  const em=emInput.value.trim()
+  const co=document.getElementById('co').value.trim()
   const sv=document.getElementById('sv').value
   const bd=document.getElementById('bd').value
-  const ms=document.getElementById('ms').value
+  const ms=document.getElementById('ms').value.trim()
 
-  if(!em||!em.includes('@')){
-    alert(currentLang === 'ua' ? 'Будь ласка, введіть коректну адресу.' : 'Please enter a valid email address.');
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+  if(!fn){
+    alert(currentLang === 'ua' ? 'Будь ласка, введіть ваше ім\'я.' : 'Please enter your first name.');
+    document.getElementById('fn').focus();
     return;
   }
-  if(!ms.trim()){
+  if(!em || !emailRegex.test(em)){
+    alert(currentLang === 'ua' ? 'Будь ласка, введіть коректну адресу (тільки латиниця).' : 'Please enter a valid email address (Latin characters only).');
+    emInput.focus();
+    return;
+  }
+  if(!ms){
     alert(currentLang === 'ua' ? 'Будь ласка, розкажіть трохи про ваш проект.' : 'Please tell us a bit about your project.');
+    document.getElementById('ms').focus();
     return;
   }
 
