@@ -5,9 +5,9 @@ export default async function handler(req, res) {
 
   const { source, email, name, company, service, budget, message } = req.body;
 
-  const TG_TOKEN = process.env.TG_TOKEN || '8712326195:AAEd8vAopTAf2_6xvynfrx1JzBDtMemWk-E';
-  const CHAT_ID = process.env.CHAT_ID || '380071501';
-  const GOOGLE_URL = 'https://script.google.com/macros/s/AKfycbzn4LB2DBfSp5SJ62f-xhUgRfWvt_foAG_eAGrwCuRxuLZ2Zi4Kzc74IOS_vnYwBEtA/exec';
+  const TG_TOKEN = process.env.TG_TOKEN;
+  const CHAT_ID = process.env.CHAT_ID;
+  const GOOGLE_URL = process.env.GOOGLE_URL;
 
   try {
     // 1. Send to Telegram
