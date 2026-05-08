@@ -65,22 +65,47 @@ window.addEventListener('scroll',()=>{
 function closePopup(){document.getElementById('popup-overlay').classList.remove('on')}
 function closePopupOutside(e){if(e.target===document.getElementById('popup-overlay'))closePopup()}
 function submitPopup(){
-  const v=document.getElementById('popup-email').value
-  if(!v||!v.includes('@')){
+  const email=document.getElementById('popup-email').value
+  if(!email||!email.includes('@')){
     alert(currentLang === 'ua' ? 'Будь ласка, введіть коректний email.' : 'Please enter a valid email.');
     return;
   }
-  const successTitle = currentLang === 'ua' ? 'Аудит уже в дорозі!' : 'Audit on the way!';
-  const successMsg = currentLang === 'ua' ? 'Перевірте пошту протягом 48 годин.<br>До зв\'язку 👋' : 'Check your inbox within 48 hours.<br>Talk soon 👋';
-  
-  document.getElementById('popup-box').innerHTML=`<div style="text-align:center;padding:24px 0"><div style="font-size:52px;margin-bottom:16px">✅</div><h3 style="font-size:22px;font-weight:800;margin-bottom:8px;color:var(--text)">${successTitle}</h3><p style="color:var(--text-light);line-height:1.65">${successMsg}</p></div>`
-  setTimeout(closePopup,3500)
+
+  const btn = document.querySelector('.popup .btn-primary');
+  const originalBtnText = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = currentLang === 'ua' ? 'Відправка...' : 'Sending...';
+
+  fetch('/api/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ source: 'audit', email: email })
+  })
+  .then(res => res.json())
+  .then(data => {
+    const successTitle = currentLang === 'ua' ? 'Аудит вже в дорозі!' : 'Audit on the way!';
+    const successMsg = currentLang === 'ua' ? 'Перевірте пошту протягом 48 годин.<br>До зв\'язку 👋' : 'Check your inbox within 48 hours.<br>Talk soon 👋';
+    
+    document.getElementById('popup-box').innerHTML=`<div style="text-align:center;padding:24px 0"><div style="font-size:52px;margin-bottom:16px">✅</div><h3 style="font-size:22px;font-weight:800;margin-bottom:8px;color:var(--text)">${successTitle}</h3><p style="color:var(--text-light);line-height:1.65">${successMsg}</p></div>`
+    setTimeout(closePopup, 3500);
+  })
+  .catch(err => {
+    alert(currentLang === 'ua' ? 'Помилка відправки. Спробуйте пізніше.' : 'Submission error. Please try again later.');
+    btn.disabled = false;
+    btn.innerHTML = originalBtnText;
+  });
 }
 
 // Contact form
 function submitForm(){
+  const fn=document.getElementById('fn').value
+  const ln=document.getElementById('ln').value
   const em=document.getElementById('em').value
+  const co=document.getElementById('co').value
+  const sv=document.getElementById('sv').value
+  const bd=document.getElementById('bd').value
   const ms=document.getElementById('ms').value
+
   if(!em||!em.includes('@')){
     alert(currentLang === 'ua' ? 'Будь ласка, введіть коректну адресу.' : 'Please enter a valid email address.');
     return;
@@ -89,10 +114,37 @@ function submitForm(){
     alert(currentLang === 'ua' ? 'Будь ласка, розкажіть трохи про ваш проект.' : 'Please tell us a bit about your project.');
     return;
   }
-  document.getElementById('form-body').style.display='none'
-  const ty=document.getElementById('form-ty')
-  ty.classList.add('on')
-  ty.scrollIntoView({behavior:'smooth',block:'center'})
+
+  const btn = document.querySelector('.contact-form-card .btn-primary');
+  const originalBtnText = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = currentLang === 'ua' ? 'Відправка...' : 'Sending...';
+
+  fetch('/api/submit', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      source: 'contact',
+      name: `${fn} ${ln}`.trim(),
+      email: em,
+      company: co,
+      service: sv,
+      budget: bd,
+      message: ms
+    })
+  })
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('form-body').style.display='none'
+    const ty=document.getElementById('form-ty')
+    ty.classList.add('on')
+    ty.scrollIntoView({behavior:'smooth',block:'center'})
+  })
+  .catch(err => {
+    alert(currentLang === 'ua' ? 'Помилка відправки. Спробуйте пізніше.' : 'Submission error. Please try again later.');
+    btn.disabled = false;
+    btn.innerHTML = originalBtnText;
+  });
 }
 
 // FAQ
